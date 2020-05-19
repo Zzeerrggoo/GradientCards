@@ -31,6 +31,7 @@ h1, h2, h3 {
 
 }
 
+
 .card h1{
     font-size: var(--size);
 }
@@ -49,8 +50,8 @@ h1, h2, h3 {
 }
 
 
+.card::before, .card::after{
 
-.card::before{
     content: '';
     border-radius: 50%;
 
@@ -60,24 +61,16 @@ h1, h2, h3 {
     position: absolute;
     background-color: white;
     opacity: 0.2;
+}
 
+
+.card::before{
     top: calc(100% - 6*var(--size));
     left: calc(100% - 10*var(--size));
 }
 
 
-
 .card::after{
-    content: '';
-    border-radius: 50%;
-
-    height: calc(11*var(--size));
-    width: calc(11*var(--size));
-
-    position: absolute;
-    background-color: white;
-    opacity: 0.2;
-
     top: calc(-1.5*var(--size));
     left: calc(100% - 6*var(--size));
 }
