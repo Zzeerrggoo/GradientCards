@@ -16,7 +16,8 @@ h1, h2, h3 {
     --size: calc(5px + 1vmax);
 
     display: inline-block;
-    padding: 2.5em calc(11*var(--size)) 2.5em 2.5em;
+    width: calc(8*var(--size));
+    padding: 2.5em calc(10*var(--size)) 2.5em 2.5em;
 
     background-image: linear-gradient(90grad,#ffbc92,#ff6b92);
     font-family: "Roboto Condence", sans-serif;
@@ -54,8 +55,8 @@ h1, h2, h3 {
     content: '';
     border-radius: 50%;
 
-    height: calc(11*var(--size));
-    width: calc(11*var(--size));
+    height: calc(11.5*var(--size));
+    width: calc(11.5*var(--size));
 
     position: absolute;
     background-color: white;
