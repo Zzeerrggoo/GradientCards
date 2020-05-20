@@ -28,16 +28,26 @@ h1, h2, h3 {
 
     overflow: hidden;
     position: relative;
-
 }
+
 
 #blue{
     background-image: linear-gradient(90grad,#85c6f7,#1389de);
 }
 
+
 #turquoise{
     background-image: linear-gradient(90grad,#78d8d1,#0fceb0);
 }
+
+
+.card img{
+    width: calc(10px + 1vmax);
+    position: absolute;
+    top: calc(var(--size)*2.5);
+    right: calc(var(--size)*2.5);
+}
+
 
 .card h1{
     font-size: var(--size);
@@ -51,10 +61,12 @@ h1, h2, h3 {
     letter-spacing: 0.03em;
 }
 
+
 .card h3{
     padding-top: 3em;
     font-size: calc(3px + 1vmax);
 }
+
 
 .card::before, .card::after{
 
