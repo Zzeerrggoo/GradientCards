@@ -16,6 +16,10 @@ h1, h2, h3 {
     --size: calc(5px + 1vmax);
 
     display: inline-block;
+
+    min-width: 120px;
+    min-height: 50px;
+
     width: calc(8*var(--size));
     padding: 2.5em calc(10*var(--size)) 2.5em 2.5em;
 
